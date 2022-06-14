@@ -1,0 +1,8 @@
+{% block content %}  
+{%load crispy_forms_tags %} 
+<form method="post">  
+    {% csrf_token %}  
+    {{ form|crispy }}  
+<input type="submit" value="Create">  
+</form> 
+{% endblock content %}

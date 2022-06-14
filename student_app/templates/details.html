@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<a href="{% url 'home' %}">Back To Home</a>
+<h1>FACULTY DATA </h1>
+{% for i in faculty %}
+    <br> 
+    <li>Name{{i.f_name}}</li>
+    <li>{{i.f_department}} </li> 
+    <li>{{i.f_mobile}}</li>
+ {% endfor %}  
+
+<h1>STUDENT DATA </h1>
+{% for i in student %}
+<br> 
+<li>Name{{i.name}}</li>
+<li>{{i.roll_number}} </li> 
+<li>{{i.mobile}}</li>
+<li>{{i.mail}}</li>
+<li>{{i.course}}</li>
+<li>{{i.sem}}</li>
+<li>{{i.dob}}</li>
+{% endfor %}
+</body>
+</html>
+
+
+
+
+
